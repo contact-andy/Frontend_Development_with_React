@@ -1,12 +1,12 @@
 # Frontend_Development_with_React
-**Frontend Development with React
+**Frontend Development with React**
 A front-end developer is a type of software developer who specializes in creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient.
 
 Front-end developers work with various technologies, tools, and languages, including:
 
   **HTML (HyperText Markup Language)**: The standard markup language used to create the structure and layout of web pages.
   
- ** CSS (Cascading Style Sheets)**: A stylesheet language used to control the presentation, formatting, and appearance of web pages, such as colors, fonts, and layout.
+ **CSS (Cascading Style Sheets)**: A stylesheet language used to control the presentation, formatting, and appearance of web pages, such as colors, fonts, and layout.
  
   **JavaScript**: A programming language that allows developers to add interactivity, animations, and other dynamic elements to websites and web applications.
 
