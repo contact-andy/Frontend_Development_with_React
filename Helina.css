@@ -1,0 +1,25 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  color: orange;
+  text-align: justify;
+  word-spacing: 10px;
+  text-transform: capitalize;
+}
+.para1 {
+  color: orange;
+}
+.para2 {
+  color: green;
+}
+.para3 {
+  color: blue;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: rgb(175, 76, 102);
+  text-decoration: underline;
+}
