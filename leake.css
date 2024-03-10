@@ -1,0 +1,23 @@
+
+.pl{
+    color:#a349a4;
+    text-transform:uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-decoration: overline;
+
+}
+p{
+    color:blue;
+    text-align: justify;
+    padding-left:50px;
+
+}
+tr{
+    text-align:center;
+ 
+}
+table{
+    width:500px;
+}
