@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session-5</title>
+    <!-- <script src="function.js"></script> -->
+    <!-- <script src="tryandcatch.js"></script> -->
+    <script src="localstorage.js"></script>
+    <script>
+      let theuser = localStorage.getItem("username");
+      if (theuser != null) document.write("Hello," + theuser);
+    </script>
+  </head>
+  <body>
+    <h1></h1>
+    <h1>Session-5</h1>
+    <input
+      type="text"
+      name="firstName"
+      id="firstName"
+      placeholder="Enter your name"
+      onkeyup="displayOutput()"
+    />
+    <div
+      id="output"
+      style="border: 1px solid grey; width: 300px; height: 100px"
+    ></div>
+
+    <img
+      id="photo"
+      onmouseover="makeItLarge()"
+      onmouseout="makeItSmall()"
+      style="
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 1px solid gray;
+      "
+      src="student.png"
+      alt="Student Photo"
+    />
+
+    <p id="intro" title="First Paragraph">This is the fifth session.</p>
+    <p class="about">It's all about function and DOM</p>
+    <h1 id="ses6">Session-6</h1>
+    <div id="container1"></div>
+    <button onclick="addParagraph()">Add</button>
+    <button onclick="removeParagraph()">Remove</button>
+
+    <script>
+      function makeItLarge() {
+        let photo = document.getElementById("photo");
+        photo.style.width = "120px";
+        photo.style.height = "120px";
+        photo.style.borderRadius = "60px";
+      }
+      function makeItSmall() {
+        let photo = document.getElementById("photo");
+        photo.style.width = "100px";
+        photo.style.height = "100px";
+        photo.style.borderRadius = "50px";
+      }
+
+      function displayOutput() {
+        let text = document.getElementById("firstName");
+        console.log(text.value);
+        document.getElementById("output").innerHTML = text.value;
+      }
+      function addParagraph() {
+        // console.log("Add Para");
+        let newPara = document.createElement("p");
+        let container1 = document.getElementById("container1");
+        newPara.innerHTML = "This is the new paragraph";
+        newPara.setAttribute("class", "newpara");
+        container1.appendChild(newPara);
+      }
+      function removeParagraph() {
+        // console.log("Remove Para");
+        //  document.getElementsByTagName("p")[0].remove();
+        let container1 = document.getElementById("container1");
+        container1.removeChild(document.getElementsByClassName("newpara")[0]);
+      }
+
+      //   let firstPara = document.getElementById("intro");
+      //   firstPara.innerHTML = "This is the fourth session.";
+      //   firstPara.setAttribute("title", "Fourth Para");
+      //   console.log(firstPara.getAttribute("title"));
+      //   firstPara.style.fontSize = "45px"; // font-size
+      //   firstPara.style.color = "blue";
+      //   document.getElementsByTagName("h1")[0].style.color = "green";
+    </script>
+  </body>
+</html>
